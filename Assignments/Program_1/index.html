@@ -50,6 +50,7 @@ var diamonds;
 var gameOver = false;
 var gameText;
 var melons;
+var TimeText;
 var scoreText;
 var deathText;
 var mushrooms;
@@ -173,7 +174,7 @@ function create ()
     //  The score
     scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
     deathText = this.add.text(620, 500, 'death: 0', { fontSize: '32px', fill: '#000' });
-
+    TimeText = this.add.text(600, 16, 'Time: ', { fontSize: '32px', fill: '#000' });
     //  Collide the player and the sprites with the platforms
     this.physics.add.collider(player, platforms);
     this.physics.add.collider(mushrooms, platforms);
@@ -332,4 +333,3 @@ function hitBomb (player, bomb)
 
 </body>
 </html>
-
